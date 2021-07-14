@@ -102,7 +102,6 @@ export const MainPage = () => {
 
     const wasChanged = useMemo(() => {
         if (pingData && subjectColumn) {
-            console.log(pingData, subjectColumn);
             return pingData.columnToTrack.value.changed_at < subjectColumn.value.changed_at
         } else return false
     }, [pingData, subjectColumn])

@@ -7,7 +7,6 @@ import Time from 'monday-ui-react-core/dist/icons/Time';
 import Icon from "monday-ui-react-core/dist/Icon.js"
 
 export const PingedPage = ({ pingData }) => {
-    console.log(pingData);
     const [pingSender, setPingSender] = useState(null)
 
     useEffect(() => {

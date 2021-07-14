@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import Lottie from 'react-lottie';
 import animationData from '../assets/lottie/llama.json';
 import Button from "monday-ui-react-core/dist/Button.js"
@@ -6,6 +6,7 @@ import Llama from '../assets/img/llama-state-2.svg';
 export const PingNowPage = ({ onSendPing, users, isSending, isSent }) => {
 
     const [isStopped, setIsStopped] = useState(true)
+    const [isAnimationComplete, setIsAnimationComplete] = useState(false)
 
     const defaultOptions = {
         loop: false,
@@ -19,9 +20,15 @@ export const PingNowPage = ({ onSendPing, users, isSending, isSent }) => {
     const eventListeners = [
         {
             eventName: 'complete',
-            callback: () => onSendPing(),
+            callback: () => setIsAnimationComplete(true),
         },
     ]
+
+    useEffect(() => {
+        if (isAnimationComplete) {
+            onSendPing()
+        }
+    }, [isAnimationComplete])
 
     const usersToPingStr = useMemo(() => {
         let str = ''
