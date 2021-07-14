@@ -1,0 +1,13 @@
+//setup
+@import "./setup/variables.scss";
+@import "./setup/base.scss";
+
+//pages
+@import "./pages/MainPage.scss";
+@import "./pages/PingNowPage.scss";
+@import "./pages/NoColumnsPage.scss";
+@import "./pages/PingedPage.scss";
+@import "./pages/StatusUpdatedPage.scss";
+
+//components
+@import './components/Loader.scss';

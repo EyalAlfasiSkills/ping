@@ -1,0 +1,57 @@
+.pinged-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 104px;
+  position: relative;
+
+  & h2 {
+    margin-bottom: 16px;
+  }
+
+  & .ping-btn {
+    width: 208px;
+  }
+
+  & .llama {
+    margin-top: 50px;
+  }
+
+  & .ping-sender-details-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 16px;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+
+    & .name-container {
+      display: flex;
+      align-items: center;
+      & .initials {
+        background-color: $purple;
+        color: $white;
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        border-radius: 50%;
+        margin-inline-end: 8px;
+      }
+    }
+
+    & .time-container {
+      display: flex;
+      align-items: center;
+      & svg {
+        color: $silver;
+        margin-inline-end: 8px;
+      }
+      & h6 {
+        color: $silver;
+      }
+    }
+  }
+}

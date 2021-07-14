@@ -1,0 +1,21 @@
+.ping-now-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 104px;
+  max-width: 500px;
+  margin: auto;
+
+  & h2 {
+    margin-bottom: 16px;
+  }
+
+  & .ping-btn {
+    width: 208px;
+  }
+
+  & .llama {
+    margin-top: 50px;
+  }
+}

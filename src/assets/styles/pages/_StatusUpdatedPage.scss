@@ -1,0 +1,23 @@
+.status-updated-page-wrapper {
+  padding-top: 104px;
+  max-width: 500px;
+  margin: auto;
+
+  & h2 {
+    margin-bottom: 16px;
+  }
+
+  & p {
+    margin-bottom: 40px;
+  }
+
+  & .status-box {
+    display: inline-block;
+    width: 130px;
+    height: 35px;
+    line-height: 35px;
+    & h6{
+        color: $white;
+    }
+  }
+}
